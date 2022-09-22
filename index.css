@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
 
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap"); */
+
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500;600;700&display=swap");
 
 html {
   scroll-behavior: smooth;
@@ -47,7 +49,8 @@ header::before {
   object-fit: cover;
   z-index: -1;
   opacity: 0.8;
-  background-color: #6a4f8b;
+  /* background-color: #6a4f8b; */
+  background-color: #301f44;
   background-blend-mode: multiply;
 }
 
@@ -137,7 +140,9 @@ img {
 .hero {
   /* max-width: 850px; */
   max-width: 916px;
-  margin: 11em auto 4em auto;
+  /* margin: 11em auto 4em auto; */
+  /* margin: 7em auto 13em auto; */
+  margin: 9em auto 11em auto;
 }
 
 /* .hero__text h1 {
@@ -149,6 +154,34 @@ img {
 span {
   margin-right: 0.2em;
   color: whitesmoke;
+}
+
+.main__title {
+  display: none;
+}
+
+.main__title {
+  max-width: 900px;
+  text-align: center;
+  font-style: italic;
+  font-family: "Dancing Script", cursive;
+}
+
+.main__title h1 {
+  font-size: 3rem;
+  font-weight: 300;
+  margin: 0;
+  color: whitesmoke;
+  letter-spacing: 2px;
+}
+
+#rogue__text,
+#family__text {
+  /* color:#eda917; */
+  font-weight: 700;
+  color: yellow;
+  letter-spacing: 6px;
+  padding: 0.2em;
 }
 
 .waviy span {
@@ -289,6 +322,7 @@ span {
 
 .clan {
   border: 1px solid #2b283a;
+  padding-bottom: 1em;
 }
 
 #clan-rogue,
@@ -297,7 +331,7 @@ span {
   width: 32%;
   background-color: #f8f7ff;
   color: #2b283a;
-  padding: 1.5em;
+  /* padding: 1.5em; */
 }
 
 .clan img {
@@ -307,6 +341,29 @@ span {
 .clan__name {
   color: #ff5400;
   font-size: 1.4rem;
+}
+
+.clan__link {
+  text-decoration: none;
+  color: whitesmoke;
+  background-color: #bc8a5f;
+  padding: 0.5em 1em;
+  margin-left: 2em;
+  border-radius: 10px;
+  transition: color 0.5ms;
+}
+
+.clan__tag {
+  color: #403d39;
+  font-size: 0.7rem;
+  margin-left: 1em;
+  transition: color 0.5s;
+}
+
+.clan__tag:hover {
+  font-weight: bold;
+  color: #d00000;
+  cursor: pointer;
 }
 
 .clan__description {
@@ -324,10 +381,13 @@ span {
 
 .redirect_link {
   padding: 0.5em 1em;
+  margin-left: 0.5em;
   background-color: #bc8a5f;
   color: whitesmoke;
   text-decoration: none;
   cursor: pointer;
+  border-radius: 10px;
+  transition: color 0.5ms;
 }
 
 .redirect_link:hover {
@@ -335,25 +395,34 @@ span {
   color: #f8f7ff;
 }
 
+.clan__link:hover {
+  background-color: #1d2f6f;
+  color: #f8f7ff;
+}
+
 footer {
   background-color: #2b283a;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 100%;
   padding: 2em;
 }
 
-footer a {
-  text-decoration: none;
-  width: 50px;
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-footer a img {
+.socials a {
+  text-decoration: none;
+  width: 50px;
+  margin: 0 2em;
+}
+
+.socials a img {
   width: 100%;
 }
 
-footer a img:hover{
+footer a img:hover {
   -webkit-filter: invert(1);
   filter: invert(1);
 }
@@ -361,11 +430,24 @@ footer a img:hover{
 @media (max-width: 700px) {
   .wrapper-modifier {
     max-width: 300px;
-    min-height: 70vh;
+    /* min-height: 70vh; */
+    min-height: 100vh;
     position: absolute;
     top: 0;
     left: 0;
     z-index: 1;
+  }
+
+  .main__title {
+    display: block;
+  }
+
+  .waviy {
+    display: none;
+  }
+
+  ul {
+    margin-top: -12em;
   }
 
   .action {
@@ -410,8 +492,10 @@ footer a img:hover{
   .hero {
     /* max-width: 277px; */
     /* margin: 13em auto; */
+    margin: 9em auto;
     width: 100%;
     padding: 0 2em;
+    margin-bottom: 0.5em;
   }
 
   ul {
