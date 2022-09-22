@@ -1,0 +1,483 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.action {
+  position: absolute;
+  top: 5%;
+  left: 3%;
+  width: 40px;
+}
+
+.action img {
+  width: 100%;
+  cursor: pointer;
+  /* -webkit-filter: invert(1);
+  filter: invert(1); */
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  background-image: url("./images/hero.jpg");
+  top: 0;
+  background-repeat: no-repeat;
+  width: 100%;
+  /* padding: 15em; */
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 0.8;
+  background-color: #6a4f8b;
+  background-blend-mode: multiply;
+}
+
+.ham {
+  display: none;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  padding: 1em;
+  justify-content: space-between;
+}
+
+ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.list-item {
+  list-style: none;
+  margin: 0 1.5em;
+}
+
+.nav-list {
+  text-decoration: none;
+  color: #ddebf8;
+}
+
+.nav-list:hover {
+  opacity: 0.5;
+}
+
+.wrapper {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #090909;
+}
+
+.clash-logo {
+  width: 145px;
+}
+
+.clash-logo img {
+  width: 100%;
+}
+
+img {
+  width: 200px;
+  object-fit: cover;
+}
+
+/* .action{
+  position: absolute;
+  top: 0;
+  width: 50px;
+}
+
+.action img{
+  width: 100%;
+} */
+
+/* .rogue {
+  color: yellowgreen;
+  margin-right: 0.2em;
+}
+
+.family {
+  color: yellowgreen;
+}
+
+.rogue,
+.family {
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+
+.rogue:hover,
+.family:hover {
+  color: whitesmoke;
+  cursor: pointer;
+} */
+
+/* Hero  */
+.hero {
+  /* max-width: 850px; */
+  max-width: 916px;
+  margin: 11em auto 4em auto;
+}
+
+/* .hero__text h1 {
+  font-size: 2.5rem;
+  color: whitesmoke;
+  letter-spacing: 2px;
+} */
+
+span {
+  margin-right: 0.2em;
+  color: whitesmoke;
+}
+
+.waviy span {
+  position: relative;
+  display: inline-block;
+  text-transform: uppercase;
+  animation: waviy 1.5s infinite;
+  animation-delay: calc(0.1s * var(--i));
+  /* font-size: 2.5rem; */
+  font-size: 3rem;
+}
+.text-color {
+  /* color: rgb(219, 96, 96); */
+  color: rgb(253 182 0);
+  font-weight: 700;
+  font-family: "Dancing Script", cursive;
+}
+
+.show {
+  transform: translateX(0%);
+}
+
+.hide {
+  transform: translateX(-100%);
+}
+
+@keyframes waviy {
+  0%,
+  40%,
+  100% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-20px);
+  }
+}
+
+/* Leader  */
+
+.leader {
+  background-image: url("./images/hero2.jpg");
+  background-color: #2b283a;
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+}
+
+.main-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+  padding: 1em;
+  justify-content: space-between;
+}
+
+.left {
+  width: 40%;
+}
+
+.left img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 55%;
+}
+
+.leader__title {
+  font-size: 3rem;
+  letter-spacing: 1px;
+  color: rgb(187, 208, 255);
+  text-transform: uppercase;
+}
+
+.leader__title,
+.leader__text {
+  margin: 0 0 0.2em 0;
+}
+
+.leader__text {
+  /* color: #ffb703; */
+  color: #a7c957;
+  line-height: 2;
+  font-size: 1.2rem;
+}
+
+.leader-secondary {
+  display: flex;
+  margin-top: 1em;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.leader-secondary div {
+  padding: 0.5em;
+  background-color: #0c081e;
+  color: white;
+  background-color: #5f29a3;
+  border-radius: 10px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.leader-secondary div:hover {
+  opacity: 0.5;
+  /* color: #ddebf8; */
+  color: #a7c957;
+  cursor: pointer;
+}
+
+/* clans  */
+.clans {
+  padding: 1em;
+  background-image: url("./images/hero-3.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.clan-wrapper {
+  width: 80%;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.clan-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.clan {
+  border: 1px solid #2b283a;
+}
+
+#clan-rogue,
+#clan-rogue-cwl,
+#clan-invicta {
+  width: 32%;
+  background-color: #f8f7ff;
+  color: #2b283a;
+  padding: 1.5em;
+}
+
+.clan img {
+  width: 100%;
+}
+
+.clan__name {
+  color: #ff5400;
+  font-size: 1.4rem;
+}
+
+.clan__description {
+  font-size: 1.2rem;
+  color: #1d2f6f;
+}
+
+.clan__name,
+.clan__description,
+.redirect_link {
+  margin: 1em 0;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.redirect_link {
+  padding: 0.5em 1em;
+  background-color: #bc8a5f;
+  color: whitesmoke;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.redirect_link:hover {
+  background-color: #1d2f6f;
+  color: #f8f7ff;
+}
+
+footer {
+  background-color: #2b283a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 2em;
+}
+
+footer a {
+  text-decoration: none;
+  width: 50px;
+}
+
+footer a img {
+  width: 100%;
+}
+
+footer a img:hover{
+  -webkit-filter: invert(1);
+  filter: invert(1);
+}
+
+@media (max-width: 700px) {
+  .wrapper-modifier {
+    max-width: 300px;
+    min-height: 70vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  .action {
+    left: inherit;
+    right: 10%;
+    top: 1%;
+    width: 65px;
+  }
+
+  .ham {
+    display: block;
+    width: 61px;
+    position: absolute;
+    top: 1%;
+    left: 4%;
+    z-index: 2;
+  }
+
+  .ham img {
+    width: 100%;
+    -webkit-filter: invert(1);
+    filter: invert(1);
+    object-fit: cover;
+    height: 66px;
+    object-fit: cover;
+    transition: transform 1s;
+  }
+
+  .clash-logo {
+    display: none;
+  }
+
+  nav {
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 1s;
+  }
+
+  .hero {
+    /* max-width: 277px; */
+    /* margin: 13em auto; */
+    width: 100%;
+    padding: 0 2em;
+  }
+
+  ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .list-item {
+    margin: 1em 0;
+  }
+
+  .nav-link {
+    font-size: 2rem;
+    font-weight: 300;
+  }
+
+  .flex {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .left {
+    width: 100%;
+  }
+
+  .left img {
+    border-radius: 0;
+  }
+
+  .right {
+    width: 100%;
+    padding: 0 1em;
+  }
+
+  .leader__title {
+    font-size: 2rem;
+  }
+
+  .leader__title,
+  .leader__text {
+    text-align: center;
+  }
+
+  .leader-secondary {
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+  }
+
+  .leader-secondary div {
+    margin: 0.5em 0;
+  }
+
+  .clan-wrapper {
+    width: 100%;
+    max-width: none;
+  }
+
+  .clan-container {
+    flex-direction: column;
+  }
+
+  #clan-rogue,
+  #clan-rogue-cwl,
+  #clan-invicta {
+    width: 100%;
+    margin: 1em 0;
+  }
+}
