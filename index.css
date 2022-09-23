@@ -325,6 +325,14 @@ span {
   color: #1d2f6f;
 }
 
+.clan__img{
+  transition: transform .5s;
+}
+
+.clan__img:hover{
+  transform: scale(2);
+}
+
 .clan__name,
 .clan__description,
 .redirect_link {
