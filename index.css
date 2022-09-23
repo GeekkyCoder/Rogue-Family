@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
 
-/* @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
 
 @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500;600;700&display=swap");
 
@@ -25,8 +25,6 @@ body {
 .action img {
   width: 100%;
   cursor: pointer;
-  /* -webkit-filter: invert(1);
-  filter: invert(1); */
 }
 
 *,
@@ -42,14 +40,12 @@ header::before {
   top: 0;
   background-repeat: no-repeat;
   width: 100%;
-  /* padding: 15em; */
   height: 500px;
   background-size: cover;
   background-position: center;
   object-fit: cover;
   z-index: -1;
   opacity: 0.8;
-  /* background-color: #6a4f8b; */
   background-color: #301f44;
   background-blend-mode: multiply;
 }
@@ -105,51 +101,11 @@ img {
   object-fit: cover;
 }
 
-/* .action{
-  position: absolute;
-  top: 0;
-  width: 50px;
-}
-
-.action img{
-  width: 100%;
-} */
-
-/* .rogue {
-  color: yellowgreen;
-  margin-right: 0.2em;
-}
-
-.family {
-  color: yellowgreen;
-}
-
-.rogue,
-.family {
-  text-transform: uppercase;
-  font-size: 3rem;
-}
-
-.rogue:hover,
-.family:hover {
-  color: whitesmoke;
-  cursor: pointer;
-} */
-
 /* Hero  */
 .hero {
-  /* max-width: 850px; */
-  max-width: 916px;
-  /* margin: 11em auto 4em auto; */
-  /* margin: 7em auto 13em auto; */
-  margin: 9em auto 11em auto;
+  max-width: 990px;
+  margin: 2em auto -2em auto;
 }
-
-/* .hero__text h1 {
-  font-size: 2.5rem;
-  color: whitesmoke;
-  letter-spacing: 2px;
-} */
 
 span {
   margin-right: 0.2em;
@@ -157,13 +113,8 @@ span {
 }
 
 .main__title {
-  display: none;
-}
-
-.main__title {
   max-width: 900px;
   text-align: center;
-  font-style: italic;
   font-family: "Dancing Script", cursive;
 }
 
@@ -177,11 +128,18 @@ span {
 
 #rogue__text,
 #family__text {
-  /* color:#eda917; */
   font-weight: 700;
   color: yellow;
-  letter-spacing: 6px;
+  letter-spacing: 3px;
   padding: 0.2em;
+  line-height: 1;
+  font-size: 4rem;
+  width: 315px;
+  margin: 0.2em auto;
+  background: #bd7d19;
+  border-radius: 20px;
+  transform: rotate(-10deg);
+  border-style: solid;
 }
 
 .waviy span {
@@ -190,11 +148,9 @@ span {
   text-transform: uppercase;
   animation: waviy 1.5s infinite;
   animation-delay: calc(0.1s * var(--i));
-  /* font-size: 2.5rem; */
   font-size: 3rem;
 }
 .text-color {
-  /* color: rgb(219, 96, 96); */
   color: rgb(253 182 0);
   font-weight: 700;
   font-family: "Dancing Script", cursive;
@@ -296,7 +252,6 @@ span {
 
 .leader-secondary div:hover {
   opacity: 0.5;
-  /* color: #ddebf8; */
   color: #a7c957;
   cursor: pointer;
 }
@@ -331,7 +286,6 @@ span {
   width: 32%;
   background-color: #f8f7ff;
   color: #2b283a;
-  /* padding: 1.5em; */
 }
 
 .clan img {
@@ -440,6 +394,7 @@ footer a img:hover {
 
   .main__title {
     display: block;
+    font-style: unset;
   }
 
   .waviy {
@@ -490,12 +445,10 @@ footer a img:hover {
   }
 
   .hero {
-    /* max-width: 277px; */
-    /* margin: 13em auto; */
     margin: 9em auto;
     width: 100%;
     padding: 0 2em;
-    margin-bottom: 0.5em;
+    margin-bottom: -1em;
   }
 
   ul {
@@ -563,5 +516,24 @@ footer a img:hover {
   #clan-invicta {
     width: 100%;
     margin: 1em 0;
+  }
+
+  .socials {
+    justify-content: space-between;
+  }
+
+  .socials a {
+    margin: 0;
+  }
+
+  .socials a img {
+    width: 40px;
+  }
+
+  #rogue__text,
+  #family__text {
+    letter-spacing: 6px;
+    font-size: 4rem;
+    line-height: 1;
   }
 }
