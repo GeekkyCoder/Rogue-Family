@@ -11,8 +11,8 @@
       content="Rogue Family- we fight back, we rock n roll, come join us!"
     />
     <link rel="shortcut icon" type="image" href="./images/favicon-32x32.png" />
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./index.css" />
-
 
     <title>Rogue Family- Lead Your Clan To Victory</title>
   </head>
@@ -44,7 +44,7 @@
     </header>
 
     <main>
-      <section class="hero">
+      <section class="hero" data-aos="slide-right" data-aos-duration="800" data-aos-delay="700">
         <div class="main__title">
           <h1>
             Welcome
@@ -56,7 +56,7 @@
         </div>
       </section>
 
-      <section class="leader" id="about">
+      <section class="leader" id="about" data-aos="slide-left" data-aos-duration="1000">
         <div class="main-wrapper flex">
           <div class="left">
             <img src="./images/queen.jpg" alt="queen" />
@@ -79,7 +79,7 @@
         </div>
       </section>
 
-      <section class="clans" id="clans">
+      <section class="clans" id="clans" data-aos="slide-right"  data-aos-easing="ease-in-out" data-aos-duration="1500">
         <div class="clan-wrapper">
           <div class="clan-container">
             <div class="clan" id="clan-rogue">
@@ -162,7 +162,7 @@
     </main>
 
     <footer id="socials">
-      <div class="socials" >
+      <div class="socials">
         <a href="https://discord.com/invite/bz7hs4X" target="_blank">
           <img src="./images/discord.png" alt="discord"
         /></a>
@@ -175,6 +175,14 @@
         <a href="https://www.reddit.com/user/CozzShel/" target="_blank"> <img src="./images//reddit.png" alt="reddit"></a>
       </div>
     </footer>
-    <script src="./index.js"></script>
+   
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 300,
+        duration:800
+      });
+    </script>
+     <script src="./index.js"></script>
   </body>
 </html>

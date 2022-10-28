@@ -30,7 +30,9 @@ removeClasses();
 
 actionImg.addEventListener("click", toggleNavigationBar);
 
-function toggleNavigationBar() {
+function toggleNavigationBar(e) {
+  e.stopPropagation()
+  console.log("being clicked")
   removeClasses();
   if (navbar.classList.contains("hide")) {
     navbar.classList.add("show");
